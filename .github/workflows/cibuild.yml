@@ -380,7 +380,7 @@ jobs:
             curl -O -L https://openssl.org/source/old/1.0.2/openssl-1.0.2u.tar.gz
             tar -xzf openssl-1.0.2u.tar.gz
             cd openssl-1.0.2u
-            ./Configure --prefix=/usr/local/ssl1.0 --openssldir=/usr/local/ssl1.0 shared shared darwin64-x86_64-cc
+            ./Configure --prefix=/usr/local/ssl1.0 --openssldir=/usr/local/ssl1.0 shared darwin64-x86_64-cc
             make depend
             make -j ${{ env.cores }}
             sudo make install_sw -j ${{ env.cores }}
